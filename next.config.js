@@ -2,6 +2,7 @@ const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
 
 const nextConfig = {
   reactStrictMode: false,
+    output: "export",
 
   webpack(config, { isServer }) {
     config.plugins.push(
